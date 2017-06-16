@@ -15,7 +15,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="apikey" elementType="Argument">
             <stringProp name="Argument.name">apikey</stringProp>
-            <stringProp name="Argument.value">24JIPG2FEVKM3A71AXVP6VY4WPJA43B5</stringProp>
+            <stringProp name="Argument.value">24JIPG2FEVKM3A71AXVP6YVY4WPJA43B5</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="kategori_digerid" elementType="Argument">
@@ -261,7 +261,7 @@
         <stringProp name="checkQuery">Select 1</stringProp>
         <stringProp name="connectionAge">5000</stringProp>
         <stringProp name="dataSource">mysqlcon</stringProp>
-        <stringProp name="dbUrl">jdbc:mysql://IPADDRESS:3306/oolurcom_pres951?characterEncoding=utf8&amp;useUnicode=true&amp;characterSetResults=utf8&amp;connectionCollation=utf8_general_ci</stringProp>
+        <stringProp name="dbUrl">jdbc:mysql://YOURIPADDRESS:3306/oolurcom_pres951?characterEncoding=utf8&amp;useUnicode=true&amp;characterSetResults=utf8&amp;connectionCollation=utf8_general_ci</stringProp>
         <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
         <boolProp name="keepAlive">true</boolProp>
         <stringProp name="password">Ok264380*</stringProp>
@@ -1072,7 +1072,7 @@ id_product IN (SELECT id_product FROM psmd_product WHERE id_supplier=${supplierI
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree " enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <boolProp name="ResultCollector.error_logging">true</boolProp>
           <objProp>
             <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
@@ -1107,7 +1107,7 @@ id_product IN (SELECT id_product FROM psmd_product WHERE id_supplier=${supplierI
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="HM-ERKEK" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="HM-ERKEK" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1491,11 +1491,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                 <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -1553,11 +1553,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                 <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -1776,11 +1776,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
-              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
               <stringProp name="HTTPSampler.path">/api/products</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -1887,11 +1887,11 @@ url_name IN (
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/api/combinations/products/${productId}</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2067,7 +2067,7 @@ id_product IN (SELECT id_product FROM psmd_product WHERE id_supplier=${supplierI
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="HM-COCUK" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="HM-COCUK" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -2451,11 +2451,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                 <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2513,11 +2513,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                 <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2736,11 +2736,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+              <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
-              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
               <stringProp name="HTTPSampler.path">/api/products</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2847,11 +2847,11 @@ url_name IN (
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/api/combinations/products/${productId}</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -2935,7 +2935,7 @@ url_name IN (
               <stringProp name="HTTPSampler.port"></stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
-              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
               <stringProp name="HTTPSampler.path">/api/images/products/${productId}</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3027,7 +3027,7 @@ id_product IN (SELECT id_product FROM psmd_product WHERE id_supplier=${supplierI
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TRENDYOL-KADIN" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TRENDYOL-KADIN" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -3142,6 +3142,7 @@ vars.put(&quot;counter_boutique&quot;, z);
               <stringProp name="ForeachController.inputVal">bigBoutiqueImageUrls</stringProp>
               <stringProp name="ForeachController.returnVal">imageUrl</stringProp>
               <boolProp name="ForeachController.useSeparator">true</boolProp>
+              <stringProp name="ForeachController.endIndex">10</stringProp>
             </ForeachController>
             <hashTree>
               <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Script.Boutique" enabled="true">
@@ -3460,6 +3461,7 @@ vars.put(&quot;new_campaignId&quot;, newCampaignId);</stringProp>
                 <stringProp name="ForeachController.inputVal">productUrls</stringProp>
                 <stringProp name="ForeachController.returnVal">productUrl</stringProp>
                 <boolProp name="ForeachController.useSeparator">true</boolProp>
+                <stringProp name="ForeachController.endIndex">10</stringProp>
               </ForeachController>
               <hashTree>
                 <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Script.counterProduct" enabled="true">
@@ -3673,11 +3675,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                         </elementProp>
                       </collectionProp>
                     </elementProp>
-                    <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                    <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                     <stringProp name="HTTPSampler.port"></stringProp>
                     <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                     <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.protocol">https</stringProp>
                     <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                     <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                     <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3735,11 +3737,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                         </elementProp>
                       </collectionProp>
                     </elementProp>
-                    <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                    <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                     <stringProp name="HTTPSampler.port"></stringProp>
                     <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                     <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.protocol">https</stringProp>
                     <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                     <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                     <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -3958,11 +3960,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                  <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                   <stringProp name="HTTPSampler.port"></stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">https</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                   <stringProp name="HTTPSampler.path">/api/products</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -4059,11 +4061,11 @@ url_name IN (
                         </elementProp>
                       </collectionProp>
                     </elementProp>
-                    <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                    <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                     <stringProp name="HTTPSampler.port"></stringProp>
                     <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                     <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                    <stringProp name="HTTPSampler.protocol"></stringProp>
+                    <stringProp name="HTTPSampler.protocol">https</stringProp>
                     <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                     <stringProp name="HTTPSampler.path">/api/combinations/products/${productId}</stringProp>
                     <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -4137,7 +4139,7 @@ url_name IN (
                   <stringProp name="HTTPSampler.port"></stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">https</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                   <stringProp name="HTTPSampler.path">/api/images/products/${productId}</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -4231,7 +4233,7 @@ id_product IN (SELECT id_product FROM psmd_product WHERE id_supplier=${supplierI
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TRENDYOL-ERKEK" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TRENDYOL-ERKEK" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -4344,6 +4346,7 @@ vars.put(&quot;counter_boutique&quot;, z);
             <stringProp name="ForeachController.inputVal">bigBoutiqueImageUrls</stringProp>
             <stringProp name="ForeachController.returnVal">imageUrl</stringProp>
             <boolProp name="ForeachController.useSeparator">true</boolProp>
+            <stringProp name="ForeachController.endIndex">10</stringProp>
           </ForeachController>
           <hashTree>
             <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Script.Boutique" enabled="true">
@@ -4650,6 +4653,7 @@ vars.put(&quot;new_campaignId&quot;, newCampaignId);</stringProp>
               <stringProp name="ForeachController.inputVal">productTitles</stringProp>
               <stringProp name="ForeachController.returnVal">productTitle</stringProp>
               <boolProp name="ForeachController.useSeparator">true</boolProp>
+              <stringProp name="ForeachController.endIndex">10</stringProp>
             </ForeachController>
             <hashTree>
               <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Script.counterProduct" enabled="true">
@@ -4863,11 +4867,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                  <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                   <stringProp name="HTTPSampler.port"></stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">https</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                   <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -4925,11 +4929,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                  <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                   <stringProp name="HTTPSampler.port"></stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">https</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                   <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -5148,11 +5152,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                 <stringProp name="HTTPSampler.path">/api/products</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -5249,11 +5253,11 @@ url_name IN (
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                  <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                   <stringProp name="HTTPSampler.port"></stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">https</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                   <stringProp name="HTTPSampler.path">/api/combinations/products/${productId}</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -5327,7 +5331,7 @@ url_name IN (
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/api/images/products/${productId}</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -5420,7 +5424,7 @@ id_product IN (SELECT id_product FROM psmd_product WHERE id_supplier=${supplierI
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TRENDYOL-COCUK" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TRENDYOL-COCUK" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -5526,6 +5530,7 @@ vars.put(&quot;counter_boutique&quot;, z);
             <stringProp name="ForeachController.inputVal">bigBoutiqueImageUrls</stringProp>
             <stringProp name="ForeachController.returnVal">imageUrl</stringProp>
             <boolProp name="ForeachController.useSeparator">true</boolProp>
+            <stringProp name="ForeachController.endIndex">10</stringProp>
           </ForeachController>
           <hashTree>
             <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Script.Boutique" enabled="true">
@@ -5832,6 +5837,7 @@ vars.put(&quot;new_campaignId&quot;, newCampaignId);</stringProp>
               <stringProp name="ForeachController.inputVal">productTitles</stringProp>
               <stringProp name="ForeachController.returnVal">productTitle</stringProp>
               <boolProp name="ForeachController.useSeparator">true</boolProp>
+              <stringProp name="ForeachController.endIndex">10</stringProp>
             </ForeachController>
             <hashTree>
               <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Script.counterProduct" enabled="true">
@@ -6045,11 +6051,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                  <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                   <stringProp name="HTTPSampler.port"></stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">https</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                   <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -6107,11 +6113,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                  <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                   <stringProp name="HTTPSampler.port"></stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">https</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                   <stringProp name="HTTPSampler.path">/api/product_feature_values</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -6324,11 +6330,11 @@ vars.put(&quot;featureValueName_brand&quot;, a5);
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                 <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
                 <stringProp name="HTTPSampler.path">/api/products</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -6425,11 +6431,11 @@ url_name IN (
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">${apikey}@productapi.oolur.com</stringProp>
+                  <stringProp name="HTTPSampler.domain">${apikey}@www.oolur.com</stringProp>
                   <stringProp name="HTTPSampler.port"></stringProp>
                   <stringProp name="HTTPSampler.connect_timeout"></stringProp>
                   <stringProp name="HTTPSampler.response_timeout"></stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.protocol">https</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                   <stringProp name="HTTPSampler.path">/api/combinations/products/${productId}</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
