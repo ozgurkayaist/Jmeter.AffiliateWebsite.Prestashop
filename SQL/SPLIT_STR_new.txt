@@ -1,0 +1,6 @@
+CREATE DEFINER=`oolurcom`@`localhost` FUNCTION `SPLIT_STR`(`x` VARCHAR(500) CHARSET utf8, `delim` VARCHAR(50) CHARSET utf8, `pos` INT) RETURNS varchar(255) CHARSET utf8mb4 COLLATE utf8mb4_turkish_ci
+RETURN REPLACE( SUBSTRING( SUBSTRING_INDEX( (
+x
+), delim, pos ) , LENGTH( SUBSTRING_INDEX( (
+x
+), delim, pos -1 ) ) +1 ) , delim,  '' )

@@ -1,0 +1,137 @@
+String mainCategory = vars.get("featureValueName_category_1");
+String currentBrand = vars.get("new_brand");
+String currentProductTitle = vars.get("productTitle");
+String currentManufacturer = vars.get("new_magaza");
+
+vars.put("presta_subCategoryId", "31");
+vars.put("presta_secondSubCategoryId", "12");
+vars.put("presta_subSubCategoryId", "165");
+
+//COCUK
+//Kız Çocuk
+if (mainCategory.contains ("Kız Çocuk") || currentProductTitle.contains ("Kız Çocuk")) {
+		vars.put("presta_subCategoryId", "29");	
+		vars.put("presta_subSubCategoryId", "155");
+		
+		if (mainCategory.contains ("giyim") || currentProductTitle.contains ("giyim")) {
+		vars.put("presta_subSubCategoryId", "155"); }
+
+		if (mainCategory.contains ("ayakkabı") || currentProductTitle.contains ("ayakkabı") || mainCategory.contains ("babet") || currentProductTitle.contains ("babet") || mainCategory.contains ("çizme") || currentProductTitle.contains ("çizme") || mainCategory.contains ("sandalet") || currentProductTitle.contains ("sandalet") || mainCategory.contains ("terlik") || currentProductTitle.contains ("terlik")) {
+		vars.put("presta_subSubCategoryId", "156"); }
+
+		if (mainCategory.contains ("çanta") || currentProductTitle.contains ("çanta")) {
+		vars.put("presta_subSubCategoryId", "157"); }
+
+		if (mainCategory.contains ("aksesuar") || currentProductTitle.contains ("aksesuar") || mainCategory.contains ("saat") || currentProductTitle.contains ("saat") || mainCategory.contains ("gözlük") || currentProductTitle.contains ("gözlük") || mainCategory.contains ("gözlüğü") || currentProductTitle.contains ("gözlüğü")) {
+		vars.put("presta_subSubCategoryId", "158"); }
+		
+		}
+
+//Erkek Çocuk
+if (mainCategory.contains ("Erkek Çocuk") || currentProductTitle.contains ("Erkek Çocuk")) {
+		vars.put("presta_subCategoryId", "30");	
+		vars.put("presta_subSubCategoryId", "159");
+
+		if (mainCategory.contains ("giyim") || currentProductTitle.contains ("giyim")) {
+		vars.put("presta_subSubCategoryId", "159"); }
+
+		if (mainCategory.contains ("ayakkabı") || currentProductTitle.contains ("ayakkabı") || mainCategory.contains ("babet") || currentProductTitle.contains ("babet") || mainCategory.contains ("çizme") || currentProductTitle.contains ("çizme") || mainCategory.contains ("sandalet") || currentProductTitle.contains ("sandalet") || mainCategory.contains ("terlik") || currentProductTitle.contains ("terlik")) {
+		vars.put("presta_subSubCategoryId", "160"); }
+
+		if (mainCategory.contains ("çanta") || currentProductTitle.contains ("çanta")) {
+		vars.put("presta_subSubCategoryId", "161"); }
+
+		if (mainCategory.contains ("aksesuar") || currentProductTitle.contains ("aksesuar") || mainCategory.contains ("saat") || currentProductTitle.contains ("saat") || mainCategory.contains ("gözlük") || currentProductTitle.contains ("gözlük") || mainCategory.contains ("gözlüğü") || currentProductTitle.contains ("gözlüğü")) {
+		vars.put("presta_subSubCategoryId", "162"); }
+		
+		}
+
+//Bebek
+if(mainCategory.contains ("Bebek") || mainCategory.contains ("Yenidoğan") || currentProductTitle.contains ("Bebek") || currentProductTitle.contains ("Yenidoğan") || mainCategory.contains ("hastane") || currentProductTitle.contains ("hastane") || mainCategory.contains ("yeni doğan") || currentProductTitle.contains ("yeni doğan")) {
+	vars.put("presta_subCategoryId", "31");
+	vars.put("presta_subSubCategoryId", "165");
+	if (mainCategory.contains ("kız") || currentProductTitle.contains ("kız")) {
+		vars.put("presta_subSubCategoryId", "163"); }
+	if (mainCategory.contains ("erkek") || currentProductTitle.contains ("erkek")) {
+		vars.put("presta_subSubCategoryId", "164"); }
+	if (mainCategory.contains ("yenidoğan") || currentProductTitle.contains ("yenidoğan") || mainCategory.contains ("hastane") || currentProductTitle.contains ("hastane")) {
+		vars.put("presta_subSubCategoryId", "165"); }
+	
+	}
+
+//Taşıma Aksesuarları
+if (mainCategory.contains ("Taşıma Aksesuarları") || mainCategory.contains ("araba") || mainCategory.contains ("Oto koltuğu") || mainCategory.contains ("kucağı") || mainCategory.contains ("Yürüteç") || mainCategory.contains ("Hoppala") || mainCategory.contains ("Aksesuar") || mainCategory.contains ("çanta") || mainCategory.contains ("Kanguru") || mainCategory.contains ("Oturak") || mainCategory.contains ("Portbebe") || mainCategory.contains ("Salıncak") || currentProductTitle.contains ("Taşıma Aksesuarları") || currentProductTitle.contains ("araba") || currentProductTitle.contains ("Oto koltuğu") || currentProductTitle.contains ("kucağı") || currentProductTitle.contains ("Yürüteç") || currentProductTitle.contains ("Hoppala") || currentProductTitle.contains ("Aksesuar") || currentProductTitle.contains ("çanta") || currentProductTitle.contains ("Kanguru") || currentProductTitle.contains ("Oturak") || currentProductTitle.contains ("Portbebe") || currentProductTitle.contains ("Salıncak") || mainCategory.contains ("Araba") || currentProductTitle.contains ("Araba") || mainCategory.contains ("Koltuğu") || currentProductTitle.contains ("Koltuğu") || mainCategory.contains ("bakım") || currentProductTitle.contains ("bakım") || mainCategory.contains ("Koltuk") || currentProductTitle.contains ("Koltuk")) {	
+		vars.put("presta_subCategoryId", "33"); 
+		vars.put("presta_subSubCategoryId", "166");
+		if (mainCategory.contains ("aksesuar") || currentProductTitle.contains ("aksesuar")) {
+		vars.put("presta_subSubCategoryId", "166"); }
+		if (mainCategory.contains ("kucağı") || currentProductTitle.contains ("kucağı")) {
+		vars.put("presta_subSubCategoryId", "167"); }
+		if (mainCategory.contains ("çanta") || currentProductTitle.contains ("çanta") || mainCategory.contains ("bakım") || currentProductTitle.contains ("bakım")) {
+		vars.put("presta_subSubCategoryId", "168"); }
+		if (mainCategory.contains ("araba") || currentProductTitle.contains ("araba")) {
+		vars.put("presta_subSubCategoryId", "169"); }
+		if (mainCategory.contains ("hoppala") || currentProductTitle.contains ("hoppala")) {
+		vars.put("presta_subSubCategoryId", "170"); }
+		if (mainCategory.contains ("kanguru") || currentProductTitle.contains ("kanguru")) {
+		vars.put("presta_subSubCategoryId", "171"); }
+		if (mainCategory.contains ("koltuk") || currentProductTitle.contains ("koltuk") || mainCategory.contains ("koltuğu") || currentProductTitle.contains ("koltuğu")) {
+		vars.put("presta_subSubCategoryId", "172"); }
+		if (mainCategory.contains ("oturak") || currentProductTitle.contains ("oturak")) {
+		vars.put("presta_subSubCategoryId", "173"); }
+		if (mainCategory.contains ("port bebe") || currentProductTitle.contains ("port bebe") || mainCategory.contains ("portbebe") || currentProductTitle.contains ("portbebe")) {
+		vars.put("presta_subSubCategoryId", "174"); }
+		if (mainCategory.contains ("salıncak") || currentProductTitle.contains ("salıncak")) {
+		vars.put("presta_subSubCategoryId", "175"); }
+		if (mainCategory.contains ("yürüteç") || currentProductTitle.contains ("yürüteç")) {
+		vars.put("presta_subSubCategoryId", "176"); }
+		
+		}
+
+//Oyuncak
+if (mainCategory.contains ("Oyuncak") || currentProductTitle.contains ("Oyuncak") || mainCategory.contains ("Oyuncağı") || currentProductTitle.contains ("Oyuncağı") || mainCategory.contains ("Kitap") || currentProductTitle.contains ("Kitap") || mainCategory.contains ("Halı") || currentProductTitle.contains ("Halı")  || mainCategory.contains ("Müzik") || currentProductTitle.contains ("Müzik") || mainCategory.contains ("kumanda") || currentProductTitle.contains ("kumanda") || mainCategory.contains ("puzzle") || currentProductTitle.contains ("puzzle") || mainCategory.contains ("peluş") || currentProductTitle.contains ("peluş") || mainCategory.contains ("hobi") || currentProductTitle.contains ("hobi") || mainCategory.contains ("bisiklet") || currentProductTitle.contains ("bisiklet") || mainCategory.contains ("scooter") || currentProductTitle.contains ("scooter") || mainCategory.contains ("akülü") || currentProductTitle.contains ("akülü") || mainCategory.contains ("sallanan") || currentProductTitle.contains ("sallanan") || mainCategory.contains ("oyun") || currentProductTitle.contains ("oyun") || mainCategory.contains ("salıncak") || currentProductTitle.contains ("salıncak") || mainCategory.contains ("kitap") || currentProductTitle.contains ("kitap") || mainCategory.contains ("kaykay") || currentProductTitle.contains ("kaykay") || mainCategory.contains ("paten") || currentProductTitle.contains ("paten") || mainCategory.contains ("okul") || currentProductTitle.contains ("okul") || mainCategory.contains ("kırtasiye") || currentProductTitle.contains ("kırtasiye") || mainCategory.contains ("boya") || currentProductTitle.contains ("boya") || mainCategory.contains ("kalem") || currentProductTitle.contains ("kalem") || mainCategory.contains ("silgi") || currentProductTitle.contains ("silgi") || mainCategory.contains ("defter") || currentProductTitle.contains ("defter")  ) {
+	vars.put("presta_subCategoryId", "32");	
+	vars.put("presta_subSubCategoryId", "179");}
+			if (mainCategory.contains ("erkek") || currentProductTitle.contains ("erkek")) {
+		vars.put("presta_subSubCategoryId", "177"); }
+			if (mainCategory.contains ("kız") || currentProductTitle.contains ("kız")) {
+		vars.put("presta_subSubCategoryId", "178"); }
+			if (mainCategory.contains ("bebek") || currentProductTitle.contains ("bebek")) {
+		vars.put("presta_subSubCategoryId", "179"); }
+			if (mainCategory.contains ("araçlar") || currentProductTitle.contains ("araçlar") || mainCategory.contains ("akülü") || currentProductTitle.contains ("akülü") || mainCategory.contains ("bisiklet") || currentProductTitle.contains ("bisiklet") || mainCategory.contains ("scooter") || currentProductTitle.contains ("scooter") || mainCategory.contains ("kaykay") || currentProductTitle.contains ("kaykay") || mainCategory.contains ("paten") || currentProductTitle.contains ("paten") || mainCategory.contains ("sallanan") || currentProductTitle.contains ("sallanan") ) {
+		vars.put("presta_subSubCategoryId", "180"); }
+			if (mainCategory.contains ("kitap") || currentProductTitle.contains ("kitap") || mainCategory.contains ("kitabı") || currentProductTitle.contains ("kitabı")) {
+		vars.put("presta_subSubCategoryId", "181"); }
+			if (mainCategory.contains ("okul") || currentProductTitle.contains ("okul") || mainCategory.contains ("kırtasiye") || currentProductTitle.contains ("kırtasiye") || mainCategory.contains ("boya") || currentProductTitle.contains ("boya") || mainCategory.contains ("kalem") || currentProductTitle.contains ("kalem") || mainCategory.contains ("silgi") || currentProductTitle.contains ("silgi") || mainCategory.contains ("defter") || currentProductTitle.contains ("defter")) {
+		vars.put("presta_subSubCategoryId", "182"); }
+
+//Beslenme
+if (mainCategory.contains ("Beslenme") || currentProductTitle.contains ("Beslenme") || mainCategory.contains ("Bardak") || currentProductTitle.contains ("Bardak")|| mainCategory.contains ("Biberon") || currentProductTitle.contains ("Biberon")|| mainCategory.contains ("Mama") || currentProductTitle.contains ("Mama") || mainCategory.contains ("Emzik") || currentProductTitle.contains ("Emzik") || mainCategory.contains ("Organik") || currentProductTitle.contains ("Organik")|| mainCategory.contains ("Dişlik") || currentProductTitle.contains ("Dişlik")|| mainCategory.contains ("Çıngırak") || currentProductTitle.contains ("Çıngırak")|| mainCategory.contains ("Önlük") || currentProductTitle.contains ("Önlük")|| mainCategory.contains ("Ağız") || currentProductTitle.contains ("Ağız")|| mainCategory.contains ("Steril") || currentProductTitle.contains ("Steril")|| mainCategory.contains ("Tabak") || currentProductTitle.contains ("Tabak")|| mainCategory.contains ("Çatal") || currentProductTitle.contains ("Çatal")|| mainCategory.contains ("Kaşık") || currentProductTitle.contains ("Kaşık")|| mainCategory.contains ("Aksesuar") || currentProductTitle.contains ("Aksesuar")) {
+	vars.put("presta_subCategoryId", "39");	
+	vars.put("presta_subSubCategoryId", "188");
+	if (mainCategory.contains ("bardak") || currentProductTitle.contains ("bardak")) {
+		vars.put("presta_subSubCategoryId", "183"); }
+		if (mainCategory.contains ("biberon") || currentProductTitle.contains ("biberon")) {
+		vars.put("presta_subSubCategoryId", "184"); }
+		if (mainCategory.contains ("ısıtıcı") || currentProductTitle.contains ("ısıtıcı")) {
+		vars.put("presta_subSubCategoryId", "185"); }
+		if (mainCategory.contains ("dişlik") || currentProductTitle.contains ("dişlik") || mainCategory.contains ("çıngırak") || currentProductTitle.contains ("çıngırak")) {
+		vars.put("presta_subSubCategoryId", "186"); }
+		if (mainCategory.contains ("mama") || currentProductTitle.contains ("mama")) {
+		vars.put("presta_subSubCategoryId", "187"); }
+		if (mainCategory.contains ("sandalye") || currentProductTitle.contains ("sandalye")) {
+		vars.put("presta_subSubCategoryId", "188"); }
+		if (mainCategory.contains ("organik") || currentProductTitle.contains ("organik")) {
+		vars.put("presta_subSubCategoryId", "189"); }
+		if (mainCategory.contains ("önlük") || currentProductTitle.contains ("önlük") || mainCategory.contains ("ağız") || currentProductTitle.contains ("ağız")) {
+		vars.put("presta_subSubCategoryId", "190"); }
+		if (mainCategory.contains ("steril") || currentProductTitle.contains ("steril")) {
+		vars.put("presta_subSubCategoryId", "191"); }
+		if (mainCategory.contains ("Tabak") || currentProductTitle.contains ("Tabak")|| mainCategory.contains ("Çatal") || currentProductTitle.contains ("Çatal")|| mainCategory.contains ("Kaşık") || currentProductTitle.contains ("Kaşık")) {
+		vars.put("presta_subSubCategoryId", "192"); }
+		if (mainCategory.contains ("emzik") || currentProductTitle.contains ("emzik") || mainCategory.contains ("emziği") || currentProductTitle.contains ("emziği")) {
+		vars.put("presta_subSubCategoryId", "193"); }
+	
+	}
+
+

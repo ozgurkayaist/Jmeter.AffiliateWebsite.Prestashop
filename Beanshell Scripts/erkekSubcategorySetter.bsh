@@ -1,0 +1,181 @@
+
+String mainCategory = vars.get("productTitle");
+String currentBrand = vars.get("new_brand");
+String currentProductTitle = vars.get("productTitle");
+String currentManufacturer = vars.get("new_magaza");
+
+//ERKEK
+//Giyim
+vars.put("presta_subCategoryId", "23");
+vars.put("presta_subSubCategoryId", "119");
+vars.put("presta_secondSubCategoryId", "12");
+vars.put("presta_secondSubSubCategoryId", "113");
+		
+		if (mainCategory.contains ("Ceket") || currentProductTitle.contains ("Ceket")|| mainCategory.contains ("Yelek") || currentProductTitle.contains ("Yelek")|| mainCategory.contains ("Blazer") || currentProductTitle.contains ("Blazer") || mainCategory.contains ("Jacket") || currentProductTitle.contains ("Jacket")) {
+		vars.put("presta_subSubCategoryId", "114"); }
+		
+		if (mainCategory.contains ("Dış Giyim") || currentProductTitle.contains ("Dış Giyim") || mainCategory.contains ("Mont") || currentProductTitle.contains ("Mont") || mainCategory.contains ("Kaban") || currentProductTitle.contains ("Kaban") || mainCategory.contains ("Mont") || currentProductTitle.contains ("Mont") || mainCategory.contains ("Palto") || currentProductTitle.contains ("Palto") || mainCategory.contains ("Panço") || currentProductTitle.contains ("Panço") || mainCategory.contains ("Pardesü") || currentProductTitle.contains ("Pardesü") || mainCategory.contains ("Parka") || currentProductTitle.contains ("Parka") || mainCategory.contains ("Trençkot") || currentProductTitle.contains ("Trençkot") || mainCategory.contains ("Yağmurluk") || currentProductTitle.contains ("Yağmurluk") ) {
+		vars.put("presta_subSubCategoryId", "115"); }
+		
+		if (mainCategory.contains ("İç Giyim") || currentProductTitle.contains ("İç Giyim") || mainCategory.contains ("Atlet") || currentProductTitle.contains ("Atlet") || mainCategory.contains ("Body") || currentProductTitle.contains ("Body")|| mainCategory.contains ("Bornoz") || currentProductTitle.contains ("Bornoz")|| mainCategory.contains ("Boxer") || currentProductTitle.contains ("Boxer")|| mainCategory.contains ("Çorap") || currentProductTitle.contains ("Çorap")|| mainCategory.contains ("Fantazi") || currentProductTitle.contains ("Fantazi")|| mainCategory.contains ("Gecelik") || currentProductTitle.contains ("Gecelik")|| mainCategory.contains ("İçlik") || currentProductTitle.contains ("İçlik") || mainCategory.contains ("Korse") || currentProductTitle.contains ("Korse")|| mainCategory.contains ("Külot") || currentProductTitle.contains ("Külot") || mainCategory.contains ("Pijama") || currentProductTitle.contains ("Pijama")|| mainCategory.contains ("Sabahlık") || currentProductTitle.contains ("Sabahlık")|| mainCategory.contains ("Slip") || currentProductTitle.contains ("Slip")) {
+		vars.put("presta_subSubCategoryId", "116"); }
+
+		if (mainCategory.contains ("Plaj") || currentProductTitle.contains ("Plaj") || mainCategory.contains ("Swim") || currentProductTitle.contains ("Swim") || mainCategory.contains ("Mayo") || currentProductTitle.contains ("Mayo") || mainCategory.contains ("Deniz Şortu") || currentProductTitle.contains ("Deniz Şortu")) {
+		vars.put("presta_subSubCategoryId", "117"); }
+		
+		if (mainCategory.contains ("Pantolon") || currentProductTitle.contains ("Pantolon") || mainCategory.contains ("Kapri") || currentProductTitle.contains ("Kapri") || mainCategory.contains ("Kargo") || currentProductTitle.contains ("Kargo") || mainCategory.contains ("Şalvar") || currentProductTitle.contains ("Şalvar") || mainCategory.contains ("Jean") || currentProductTitle.contains ("Jean")) {
+		vars.put("presta_subSubCategoryId", "118"); }
+		
+		if (mainCategory.contains ("Spor Giyim") || currentProductTitle.contains ("Spor Giyim") || mainCategory.contains ("Bisiklet") || currentProductTitle.contains ("Bisiklet") || mainCategory.contains ("Kayak") || currentProductTitle.contains ("Kayak") || mainCategory.contains ("Sörf") || currentProductTitle.contains ("Sörf") || mainCategory.contains ("Eşofman") || currentProductTitle.contains ("Eşofman") || mainCategory.contains ("Fitness") || currentProductTitle.contains ("Fitness") || mainCategory.contains ("Forma") || currentProductTitle.contains ("Forma") || mainCategory.contains ("Koşu") || currentProductTitle.contains ("Koşu") || mainCategory.contains ("Sporcu") || currentProductTitle.contains ("Sporcu") || mainCategory.contains ("Sweatshirt") || currentProductTitle.contains ("Sweatshirt") || mainCategory.contains ("Sweat") || currentProductTitle.contains ("Sweat") || mainCategory.contains ("Tişört") || currentProductTitle.contains ("Tişört") || mainCategory.contains ("shirt") || currentProductTitle.contains ("shirt") || mainCategory.contains ("Basketbol") || currentProductTitle.contains ("Basketbol") || mainCategory.contains ("Futbol") || currentProductTitle.contains ("Futbol")) {
+		vars.put("presta_subSubCategoryId", "119"); }
+
+		if (mainCategory.contains ("Şort") || currentProductTitle.contains ("Şort") || mainCategory.contains ("Bermuda") || currentProductTitle.contains ("Bermuda") || mainCategory.contains ("Kargo") || currentProductTitle.contains ("Kargo")) {
+		vars.put("presta_subSubCategoryId", "120"); }
+
+		if (mainCategory.contains ("Takım Elbise") || currentProductTitle.contains ("Takım Elbise") || mainCategory.contains ("Damatlık") || currentProductTitle.contains ("Damatlık")) {
+		vars.put("presta_subSubCategoryId", "121"); }
+
+		if (mainCategory.contains ("Üst Giyim") || currentProductTitle.contains ("Üst Giyim") || mainCategory.contains ("Body") || currentProductTitle.contains ("Body") || mainCategory.contains ("Gömlek") || currentProductTitle.contains ("Gömlek") || mainCategory.contains ("Hırka") || currentProductTitle.contains ("Hırka") || mainCategory.contains ("Kazak") || currentProductTitle.contains ("Kazak") || mainCategory.contains ("Süveter") || currentProductTitle.contains ("Süveter") || mainCategory.contains ("Tunik") || currentProductTitle.contains ("Tunik")) {
+		vars.put("presta_subSubCategoryId", "122"); }
+		
+
+
+
+//Aksesuar
+
+if (mainCategory.contains ("Aksesuar") || currentProductTitle.contains ("Aksesuar") || mainCategory.contains ("Gözlük") || currentProductTitle.contains ("Gözlük") || mainCategory.contains ("Gözlüğü") || currentProductTitle.contains ("Gözlüğü") || mainCategory.contains ("Takı") || currentProductTitle.contains ("Takı") || mainCategory.contains ("Tesbih") || currentProductTitle.contains ("Tesbih") || mainCategory.contains ("Bandı") || currentProductTitle.contains ("Bandı") || mainCategory.contains ("Kemer") || currentProductTitle.contains ("Kemer") || mainCategory.contains ("Atkı") || currentProductTitle.contains ("Atkı") || mainCategory.contains ("Şapka") || currentProductTitle.contains ("Şapka") || mainCategory.contains ("Bere") || currentProductTitle.contains ("Bere") || mainCategory.contains ("Boyunluk") || currentProductTitle.contains ("Boyunluk") || mainCategory.contains ("Eldiven") || currentProductTitle.contains ("Eldiven") || mainCategory.contains ("Şemsiye") || currentProductTitle.contains ("Şemsiye") || mainCategory.contains ("Anahtarlık") || currentProductTitle.contains ("Anahtarlık") || mainCategory.contains ("Saat") || currentProductTitle.contains ("Saat") || mainCategory.contains ("Saati") || currentProductTitle.contains ("Saati") || mainCategory.contains ("Alyans") || currentProductTitle.contains ("Alyans") || mainCategory.contains ("Bilezik") || currentProductTitle.contains ("Bilezik") || mainCategory.contains ("Bileklik") || currentProductTitle.contains ("Bileklik") || mainCategory.contains ("Broş") || currentProductTitle.contains ("Broş") || mainCategory.contains ("Çakmak") || currentProductTitle.contains ("Çakmak") || mainCategory.contains ("Dövme") || currentProductTitle.contains ("Dövme") || mainCategory.contains ("Halhal") || currentProductTitle.contains ("Halhal") || mainCategory.contains ("Fular") || currentProductTitle.contains ("Fular") || mainCategory.contains ("Hızma") || currentProductTitle.contains ("Hızma") || mainCategory.contains ("Kolye") || currentProductTitle.contains ("Kolye") || mainCategory.contains ("Kulaklık") || currentProductTitle.contains ("Kulaklık") || mainCategory.contains ("Küpe") || currentProductTitle.contains ("Küpe") || mainCategory.contains ("Piercing") || currentProductTitle.contains ("Piercing") || mainCategory.contains ("Kravat") || currentProductTitle.contains ("Kravat") || mainCategory.contains ("Uyku Bandı") || currentProductTitle.contains ("Uyku Bandı") || mainCategory.contains ("Yüzük") || currentProductTitle.contains ("Yüzük") ) {
+		vars.put("presta_subCategoryId", "27"); 
+		vars.put("presta_subSubCategoryId", "145");
+		
+		if (mainCategory.contains ("Gözlük") || currentProductTitle.contains ("Gözlük") || mainCategory.contains ("Gözlüğü") || currentProductTitle.contains ("Gözlüğü")) {
+		vars.put("presta_subSubCategoryId", "141"); }
+
+		if (mainCategory.contains ("Kemer") || currentProductTitle.contains ("Kemer")) {
+		vars.put("presta_subSubCategoryId", "142"); }
+
+		if (mainCategory.contains ("Kravat") || currentProductTitle.contains ("Kravat")) {
+		vars.put("presta_subSubCategoryId", "143"); }
+
+		if (mainCategory.contains ("Şapka") || currentProductTitle.contains ("Şapka")) {
+		vars.put("presta_subSubCategoryId", "144"); }
+		
+		if (mainCategory.contains ("Takı") || currentProductTitle.contains ("Takı") || mainCategory.contains ("Alyans") || currentProductTitle.contains ("Alyans") || mainCategory.contains ("Bilezik") || currentProductTitle.contains ("Bilezik") || mainCategory.contains ("Bileklik") || currentProductTitle.contains ("Bileklik") || mainCategory.contains ("Broş") || currentProductTitle.contains ("Broş") || mainCategory.contains ("Halhal") || currentProductTitle.contains ("Halhal") || mainCategory.contains ("Hızma") || currentProductTitle.contains ("Hızma") || mainCategory.contains ("Kolye") || currentProductTitle.contains ("Kolye") || mainCategory.contains ("Küpe") || currentProductTitle.contains ("Küpe") || mainCategory.contains ("Piercing") || currentProductTitle.contains ("Piercing") || mainCategory.contains ("Tektaş") || currentProductTitle.contains ("Tektaş") || mainCategory.contains ("Yüzük") || currentProductTitle.contains ("Yüzük") ) {
+		vars.put("presta_subSubCategoryId", "145"); }
+
+		if (mainCategory.contains ("Saat") || currentProductTitle.contains ("Saat") || mainCategory.contains ("Saati")) {
+		vars.put("presta_subSubCategoryId", "146"); }
+
+		if (mainCategory.contains ("Tesbih") || currentProductTitle.contains ("Tesbih")) {
+		vars.put("presta_subSubCategoryId", "147"); }
+		
+		if (mainCategory.contains ("Atkı") || currentProductTitle.contains ("Atkı")) {
+		vars.put("presta_subSubCategoryId", "148"); }
+
+		if (mainCategory.contains ("Fular") || currentProductTitle.contains ("Fular")) {
+		vars.put("presta_subSubCategoryId", "149"); }
+		
+		if (mainCategory.contains ("Bere") || currentProductTitle.contains ("Bere")) {
+		vars.put("presta_subSubCategoryId", "150"); }
+		
+		if (mainCategory.contains ("Eldiven") || currentProductTitle.contains ("Eldiven")) {
+		vars.put("presta_subSubCategoryId", "151"); }
+		
+		}
+
+		
+
+//Kozmetik
+
+if (mainCategory.contains ("Kozmetik") || currentProductTitle.contains ("Kozmetik") || mainCategory.contains ("Bakım") || currentProductTitle.contains ("Bakım") || mainCategory.contains ("Parfüm") || currentProductTitle.contains ("Parfüm") || mainCategory.contains ("Sağlık") || currentProductTitle.contains ("Sağlık") || mainCategory.contains ("Ağız") || currentProductTitle.contains ("Ağız") || mainCategory.contains ("Diş") || currentProductTitle.contains ("Diş") || mainCategory.contains ("Krem") || currentProductTitle.contains ("Krem") || mainCategory.contains ("Deodorant") || currentProductTitle.contains ("Deodorant") || mainCategory.contains ("Cilt") || currentProductTitle.contains ("Cilt") || mainCategory.contains ("Bronzlaştırıcı") || currentProductTitle.contains ("Bronzlaştırıcı") || mainCategory.contains ("Cımbız") || currentProductTitle.contains ("Cımbız") || mainCategory.contains ("Dudak") || currentProductTitle.contains ("Dudak") || mainCategory.contains ("Eyeliner") || currentProductTitle.contains ("Eyeliner") || mainCategory.contains ("Kapatıcı") || currentProductTitle.contains ("Kapatıcı") || mainCategory.contains ("Kirpik") || currentProductTitle.contains ("Kirpik") || mainCategory.contains ("Lipstick") || currentProductTitle.contains ("Lipstick") || mainCategory.contains ("Ayna") || currentProductTitle.contains ("Ayna") || mainCategory.contains ("Fırça") || currentProductTitle.contains ("Fırça") || mainCategory.contains ("Temizleyici") || currentProductTitle.contains ("Temizleyici") || mainCategory.contains ("Parlatıcı") || currentProductTitle.contains ("Parlatıcı") || mainCategory.contains ("Vücut") || currentProductTitle.contains ("Vücut") || mainCategory.contains ("Banyo") || currentProductTitle.contains ("Banyo") ) {
+		vars.put("presta_subCategoryId", "26"); 
+		vars.put("presta_subSubCategoryId", "140");
+		if (mainCategory.contains ("Cilt Bakımı") || currentProductTitle.contains ("Cilt Bakımı") || mainCategory.contains ("Cilt") || currentProductTitle.contains ("Cilt") || mainCategory.contains ("Güneş") || currentProductTitle.contains ("Güneş") || mainCategory.contains ("Krem") || currentProductTitle.contains ("Krem") || mainCategory.contains ("Maske") || currentProductTitle.contains ("Maske") || mainCategory.contains ("Nemlendirici") || currentProductTitle.contains ("Nemlendirici") || mainCategory.contains ("Peeling") || currentProductTitle.contains ("Peeling") || mainCategory.contains ("Sabun") || currentProductTitle.contains ("Sabun") || mainCategory.contains ("Serum") || currentProductTitle.contains ("Serum") || mainCategory.contains ("Temizleyici") || currentProductTitle.contains ("Temizleyici") || mainCategory.contains ("Tıraş") || currentProductTitle.contains ("Tıraş") || mainCategory.contains ("Tonik") || currentProductTitle.contains ("Tonik")) {
+		vars.put("presta_subSubCategoryId", "137"); }
+
+		if (mainCategory.contains ("Diş ve Ağız Bakımı") || currentProductTitle.contains ("Diş ve Ağız Bakımı") || mainCategory.contains ("Ağız") || currentProductTitle.contains ("Ağız") || mainCategory.contains ("Diş") || currentProductTitle.contains ("Diş") ) {
+		vars.put("presta_subSubCategoryId", "138"); }
+
+		if (mainCategory.contains ("Saç Bakımı") || currentProductTitle.contains ("Saç Bakımı") || mainCategory.contains ("Saç") || currentProductTitle.contains ("Saç") || mainCategory.contains ("Şampuan") || currentProductTitle.contains ("Şampuan")) {
+		vars.put("presta_subSubCategoryId", "139"); }
+
+		if (mainCategory.contains ("Vücut Bakımı ve Banyo Ürünleri") || currentProductTitle.contains ("Vücut Bakımı ve Banyo Ürünleri") || mainCategory.contains ("Vücut") || currentProductTitle.contains ("Vücut") || mainCategory.contains ("Banyo") || currentProductTitle.contains ("Banyo") || mainCategory.contains ("Deodorant") || currentProductTitle.contains ("Deodorant") || mainCategory.contains ("Stick") || currentProductTitle.contains ("Stick") || mainCategory.contains ("Jeli") || currentProductTitle.contains ("Jeli") || mainCategory.contains ("Losyon") || currentProductTitle.contains ("Losyon")) {
+		vars.put("presta_subSubCategoryId", "140"); }
+		
+}
+
+//Ayakkabı
+if (mainCategory.contains ("Ayakkabı") || currentProductTitle.contains ("Ayakkabı") || mainCategory.contains ("Erkek Bot") || currentProductTitle.contains ("Erkek Bot") || mainCategory.contains ("Çizme") || currentProductTitle.contains ("Çizme") || mainCategory.contains ("Terlik") || currentProductTitle.contains ("Terlik") || mainCategory.contains ("Terliği") || currentProductTitle.contains ("Terliği") || mainCategory.contains ("Sandalet") || currentProductTitle.contains ("Sandalet") || mainCategory.contains ("Sneaker") || currentProductTitle.contains ("Sneaker") || mainCategory.contains ("Espadril") || currentProductTitle.contains ("Espadril")) {
+		vars.put("presta_subCategoryId", "24"); 
+		vars.put("presta_subSubCategoryId", "123");
+
+		if (mainCategory.contains ("Günlük") || currentProductTitle.contains ("Günlük")) {
+		vars.put("presta_subSubCategoryId", "123"); }
+
+		if (mainCategory.contains ("Spor") || currentProductTitle.contains ("Spor") || mainCategory.contains ("Spor") || currentProductTitle.contains ("Spor") || mainCategory.contains ("Basketbol") || mainCategory.contains ("Futbol") || mainCategory.contains ("Koşu") || mainCategory.contains ("Tenis") || currentBrand.contains ("Adidas") || currentBrand.contains ("Nike") || currentBrand.contains ("Puma") || currentBrand.contains ("Hummel") || currentBrand.contains ("Superga") || currentBrand.contains ("Reebok") || currentBrand.contains ("New Balance") || currentBrand.contains ("Lacoste") || currentBrand.contains ("Skechers") || currentBrand.contains ("Onitsuka") || currentBrand.contains ("Tiger") || currentBrand.contains ("Polo") || currentBrand.contains ("Converse") || currentBrand.contains ("Vans") || currentBrand.contains ("Kinetix") || currentBrand.contains ("Lotto") || currentBrand.contains ("Lumberjack") || currentBrand.contains ("Docker") || currentBrand.contains ("Harley") || currentBrand.contains ("Salomon") || currentBrand.contains ("Wolfskin") || currentBrand.contains ("North Face") || currentBrand.contains ("Lafuma") || currentBrand.contains ("Merrell") || currentBrand.contains ("Wilson") || currentBrand.contains ("Voit") || currentBrand.contains ("Altis") || currentBrand.contains ("Slazenger") || currentBrand.contains ("Molten") || currentBrand.contains ("Lescon") || currentBrand.contains ("Letoon") || currentBrand.contains ("Dunlop") || currentBrand.contains ("Columbia") || currentBrand.contains ("Kappa") || currentBrand.contains ("Mikasa") || currentBrand.contains ("Quicksilver") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics")) {
+		vars.put("presta_subSubCategoryId", "124"); }
+
+		if (mainCategory.contains ("Sandalet") || currentProductTitle.contains ("Sandalet")) {
+		vars.put("presta_subSubCategoryId", "125"); }
+
+		if (mainCategory.contains ("Terlik") || currentProductTitle.contains ("Terlik") || mainCategory.contains ("Terliği") || currentProductTitle.contains ("Terliği")) {
+		vars.put("presta_subSubCategoryId", "126"); }
+		
+		if (mainCategory.contains ("Erkek Bot") || currentProductTitle.contains ("Erkek Bot") || mainCategory.contains ("Çizme") || currentProductTitle.contains ("Çizme")) {
+		vars.put("presta_subSubCategoryId", "127"); }
+		
+		}
+
+
+//Spor
+if (mainCategory.contains ("Spor") || currentProductTitle.contains ("Spor") || mainCategory.contains ("Basketbol") || mainCategory.contains ("Futbol") || mainCategory.contains ("Koşu") || mainCategory.contains ("Tenis") || currentBrand.contains ("Adidas") || currentBrand.contains ("Nike") || currentBrand.contains ("Puma") || currentBrand.contains ("Hummel") || currentBrand.contains ("Superga") || currentBrand.contains ("Reebok") || currentBrand.contains ("New Balance") || currentBrand.contains ("Lacoste") || currentBrand.contains ("Skechers") || currentBrand.contains ("Onitsuka") || currentBrand.contains ("Tiger") || currentBrand.contains ("Polo") || currentBrand.contains ("Converse") || currentBrand.contains ("Vans") || currentBrand.contains ("Kinetix") || currentBrand.contains ("Lotto") || currentBrand.contains ("Lumberjack") || currentBrand.contains ("Docker") || currentBrand.contains ("Harley") || currentBrand.contains ("Salomon") || currentBrand.contains ("Wolfskin") || currentBrand.contains ("North Face") || currentBrand.contains ("Lafuma") || currentBrand.contains ("Merrell") || currentBrand.contains ("Wilson") || currentBrand.contains ("Voit") || currentBrand.contains ("Altis") || currentBrand.contains ("Slazenger") || currentBrand.contains ("Molten") || currentBrand.contains ("Lescon") || currentBrand.contains ("Letoon") || currentBrand.contains ("Dunlop") || currentBrand.contains ("Columbia") || currentBrand.contains ("Kappa") || currentBrand.contains ("Mikasa") || currentBrand.contains ("Quicksilver") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics")) {	
+		vars.put("presta_secondSubCategoryId", "28");
+		vars.put("presta_secondSubSubCategoryId", "152");
+
+		if (mainCategory.contains ("Giyim") || currentProductTitle.contains ("Giyim")) {
+		vars.put("presta_secondSubSubCategoryId", "152"); }
+
+		if (mainCategory.contains ("Ayakkabı") || currentProductTitle.contains ("Ayakkabı") || mainCategory.contains ("Erkek Bot") || currentProductTitle.contains ("Erkek Bot")) {
+		vars.put("presta_secondSubSubCategoryId", "153"); }
+
+		if (mainCategory.contains ("Çanta") || currentProductTitle.contains ("Çanta")) {
+		vars.put("presta_secondSubSubCategoryId", "154"); }
+				
+}
+
+//Çanta
+
+	if (mainCategory.contains ("Çanta") || currentProductTitle.contains ("Çanta") || mainCategory.contains ("Bavul") || currentProductTitle.contains ("Bavul") || mainCategory.contains ("Cüzdan") || currentProductTitle.contains ("Cüzdan") || mainCategory.contains ("Çantası") || currentProductTitle.contains ("Çantası") || mainCategory.contains ("Kartvizit") || currentProductTitle.contains ("Kartvizit") || mainCategory.contains ("Portföy") || currentProductTitle.contains ("Portföy") || mainCategory.contains ("Clutch") || currentProductTitle.contains ("Clutch")) {
+		vars.put("presta_subCategoryId", "25");	
+		vars.put("presta_subSubCategoryId", "135");
+
+				if (mainCategory.contains ("Bavul") || currentProductTitle.contains ("Bavul") || mainCategory.contains ("Seyahat") || currentProductTitle.contains ("Seyahat")) {
+		vars.put("presta_subSubCategoryId", "128"); }
+
+				if (mainCategory.contains ("Cüzdan") || currentProductTitle.contains ("Cüzdan")) {
+		vars.put("presta_subSubCategoryId", "129"); }
+
+				if (mainCategory.contains ("Evrak") || currentProductTitle.contains ("Evrak")) {
+		vars.put("presta_subSubCategoryId", "130"); }
+
+				if (mainCategory.contains ("Günlük") || currentProductTitle.contains ("Günlük")) {
+		vars.put("presta_subSubCategoryId", "131"); }
+
+				if (mainCategory.contains ("Kartvizit") || currentProductTitle.contains ("Kartvizit")) {
+		vars.put("presta_subSubCategoryId", "132"); }
+
+				if (mainCategory.contains ("Laptop") || currentProductTitle.contains ("Laptop")) {
+		vars.put("presta_subSubCategoryId", "1331"); }
+
+				if (mainCategory.contains ("Omuz") || currentProductTitle.contains ("Omuz")) {
+		vars.put("presta_subSubCategoryId", "134"); }
+
+				if (mainCategory.contains ("Sırt") || currentProductTitle.contains ("Sırt")) {
+		vars.put("presta_subSubCategoryId", "135"); }
+
+				if (mainCategory.contains ("Spor") || currentProductTitle.contains ("Spor") || mainCategory.contains ("Spor") || currentProductTitle.contains ("Spor") || mainCategory.contains ("Basketbol") || mainCategory.contains ("Futbol") || mainCategory.contains ("Koşu") || mainCategory.contains ("Tenis") || currentBrand.contains ("Adidas") || currentBrand.contains ("Nike") || currentBrand.contains ("Puma") || currentBrand.contains ("Hummel") || currentBrand.contains ("Superga") || currentBrand.contains ("Reebok") || currentBrand.contains ("New Balance") || currentBrand.contains ("Lacoste") || currentBrand.contains ("Skechers") || currentBrand.contains ("Onitsuka") || currentBrand.contains ("Tiger") || currentBrand.contains ("Polo") || currentBrand.contains ("Converse") || currentBrand.contains ("Vans") || currentBrand.contains ("Kinetix") || currentBrand.contains ("Lotto") || currentBrand.contains ("Lumberjack") || currentBrand.contains ("Docker") || currentBrand.contains ("Harley") || currentBrand.contains ("Salomon") || currentBrand.contains ("Wolfskin") || currentBrand.contains ("North Face") || currentBrand.contains ("Lafuma") || currentBrand.contains ("Merrell") || currentBrand.contains ("Wilson") || currentBrand.contains ("Voit") || currentBrand.contains ("Altis") || currentBrand.contains ("Slazenger") || currentBrand.contains ("Molten") || currentBrand.contains ("Lescon") || currentBrand.contains ("Letoon") || currentBrand.contains ("Dunlop") || currentBrand.contains ("Columbia") || currentBrand.contains ("Kappa") || currentBrand.contains ("Mikasa") || currentBrand.contains ("Quicksilver") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics") || currentBrand.contains ("Asics")) {
+		vars.put("presta_subSubCategoryId", "136"); }
+		}
+
+		
+
+
